@@ -32,7 +32,7 @@ I test sono disponibili [qui](https://github.com/emirvelicanin/progetto-API-2024
 
 ## 🍰 Ricette e Magazzino
 Le ricette e il Magazzino  sono state implementate tramite **tabella hash**
----
+
 ## 📦 Ordini
 La gestione degli ordini richiede due approcci differenti:
 
