@@ -40,7 +40,7 @@ La gestione degli ordini richiede due approcci differenti:
 Rappresentati tramite **lista concatenata**, che permette una gestione semplice delle aggiunte e rimozioni.  
 
 ### Ordini completati
-Organizzati in un **albero rosso-nero**, che mantiene automaticamente i nodi ordinati in base alla data di completamento; permettendo cosi di avere uno storico degli ordni completati.  
+Organizzati in un **albero rosso-nero**, che mantiene automaticamente i nodi ordinati in base alla data di completamento.
 
 ## Strumenti utilizzati
 
