@@ -30,42 +30,17 @@ I test sono disponibili [qui](https://github.com/emirvelicanin/progetto-API-2024
 
 ## Scelte progettuali e strutture Dati Utilizzate
 
-## 🍰 Ricette
-Le ricette sono state implementate tramite **tabella hash**, soluzione che garantisce accesso diretto in tempo medio costante.  
-- **Inserimento**: O(1) medio  
-- **Ricerca**: O(1) medio  
-- **Cancellazione**: O(1) medio  
-
-Questa scelta consente di reperire velocemente una ricetta data la sua chiave (es. nome o codice identificativo).
-
+## 🍰 Ricette e Magazzino
+Le ricette e il Magazzino  sono state implementate tramite **tabella hash**
 ---
-
-## 🏬 Magazzino
-Il magazzino è stato gestito anch’esso con una **tabella hash**, utile per associare rapidamente ogni ingrediente alla relativa quantità disponibile.  
-- **Aggiornamento quantità**: O(1) medio  
-- **Ricerca ingrediente**: O(1) medio  
-- **Inserimento nuovo ingrediente**: O(1) medio  
-
-In questo modo il controllo della disponibilità delle scorte risulta molto efficiente.
-
----
-
 ## 📦 Ordini
 La gestione degli ordini richiede due approcci differenti:
 
 ### Ordini non completati
 Rappresentati tramite **lista concatenata**, che permette una gestione semplice delle aggiunte e rimozioni.  
-- **Inserimento in coda**: O(1)  
-- **Cancellazione di un ordine noto**: O(1) se si ha il puntatore, O(n) in generale  
-- **Scansione della lista**: O(n)  
-
-Questa struttura è adatta al caso in cui gli ordini siano temporanei e la loro priorità non sia legata alla data.
 
 ### Ordini completati
 Organizzati in un **albero rosso-nero**, che mantiene automaticamente i nodi ordinati in base alla data di completamento.  
-- **Inserimento**: O(log n)  
-- **Ricerca**: O(log n)  
-- **Cancellazione**: O(log n)  
 
 Questa scelta consente di ottenere uno storico ordinato degli ordini completati, con ricerche efficienti in funzione della data.
 
